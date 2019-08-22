@@ -14,6 +14,17 @@ client.on("message", (message) => {
     const command = args.shift().toLowerCase();
 
     switch (command) {
+        case "look":
+            const followUp = args.join(" ");
+            switch (followUp) {
+                case "at my horse":
+                    message.channel.send("My horse is amazing!\nhttps://media1.tenor.com/images/59b423ec998cdb6f513accd346c088be/tenor.gif?itemid=5297943");
+                    break;
+                case "a monkey":
+                    message.channel.send("Hey- I'm chubby, but I'm quick!\nhttps://thumbs.gfycat.com/FocusedUnsteadyKinkajou-mobile.mp4");
+                    break;
+            }
+            break;
         case "ping":
             message.channel.send("pong!");
             break;
