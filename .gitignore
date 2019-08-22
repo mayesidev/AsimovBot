@@ -1,2 +1,10 @@
+# Logs
+logs/
+*.log
 
+# Configs
 config.json
+config.js
+
+# Dependencies
+node_modules/
