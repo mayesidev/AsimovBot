@@ -1,5 +1,5 @@
 # AsimovBot
-Discord bot.
 
-Following along with the demo here (for now)-
-	https://anidiots.guide/first-bot/your-first-bot
+A Discord bot.
+
+Loosely following along with the demo [here](https://anidiots.guide/first-bot/your-first-bot) (to get started).
