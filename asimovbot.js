@@ -10,7 +10,7 @@ client.on("message", (message) => {
     // Don't respond to messages without the prefix or from other bots
     if (message.content.indexOf(config.prefix) !== 0 || message.author.bot) return;
 
-    const args = message.content.slice(config.prefix.length).trim().split(/s+/g);
+    const args = message.content.slice(config.prefix.length).trim().split(/\s+/g);
     const command = args.shift().toLowerCase();
 
     switch (command) {
