@@ -1,0 +1,5 @@
+{
+    "token": "SuperSecretTokenGoesHere",
+    "prefix": "DesiredPrefixGoesHere",
+    "superUserIDs": "SuperUserIDsGoHere"
+}
