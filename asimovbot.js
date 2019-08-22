@@ -20,6 +20,10 @@ client.on("message", (message) => {
         case "pong":
             message.channel.send("hey, that's my line!");
             break;
+        case "say":
+            let text = args.join(" ");
+            message.delete();
+            message.channel.send(text);
         // Don't respond to unrecognized commands.
         default:
             return;
