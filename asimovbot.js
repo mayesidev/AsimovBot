@@ -8,10 +8,22 @@ client.on("ready", () => {
  
 client.on("message", (message) => {
   // Don't respond to messages without the prefix or from other bots
-  if(!message.content.startsWith(config.prefix) || message.author.bot) return;
+  if(message.content.indexOf(config.prefix) !== 0 || message.author.bot) return;
 
-  if (message.content === (config.prefix + "ping")) {
-    message.channel.send("pong!");
+  const args = message.content.slice(config.prefix.length).trim().split(/s+/g);
+  const command = args.shift().toLowerCase();
+
+  switch(command)
+  {
+    case "ping":
+        message.channel.send("pong!");
+      break;
+    case "pong":
+        message.channel.send("hey, that's my line!");
+      break;
+    // Don't respond to unrecognized commands.
+    default:
+      return;
   }
 });
  
